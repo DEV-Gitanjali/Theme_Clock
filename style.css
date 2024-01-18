@@ -64,4 +64,13 @@ body {
     height: 200px;
     background-color: #f0f0f0;
 }
-
+/* this code for needle element styling */
+.needle{
+   background-color: var(--primary-color);
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   height: 65%;
+   width: 3px;
+   transform-origin: bottom center; 
+}
