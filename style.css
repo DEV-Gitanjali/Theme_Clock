@@ -65,12 +65,31 @@ body {
     background-color: #f0f0f0;
 }
 /* this code for needle element styling */
-.needle{
-   background-color: var(--primary-color);
-   position: absolute;
-   top: 50%;
-   left: 50%;
-   height: 65%;
-   width: 3px;
-   transform-origin: bottom center; 
-}
+.needle {
+    background-color: var(--primary-color);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 65px;
+    width: 3px;
+    transform-origin: bottom center;
+    transition: all 0.5s ease-in;
+  }
+
+
+  /* this method for all needle hour,minute,second styling */
+.needle.hour {
+    transform: translate(-50%, -100%) rotate(0deg);
+  }
+  
+  .needle.minute {
+    transform: translate(-50%, -100%) rotate(0deg);
+    height: 100px;
+  }
+  
+  .needle.second {
+    transform: translate(-50%, -100%) rotate(0deg);
+    height: 100px;
+    background-color: #e74c3c;
+  }
+
